@@ -10,11 +10,11 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
-	config.track_inventory_levels = true
-    	config.allow_backorder_shipping = false
-  # Example:
-  # Uncomment to stop tracking inventory levels in the application
-  # config.track_inventory_levels = false
+config.track_inventory_levels = true
+allow_backorder_shipping = false
+# Example:
+# Uncomment to stop tracking inventory levels in the application
+# config.track_inventory_levels = false
 end
 
 Spree.user_class = "Spree::User"
