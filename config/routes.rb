@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, :at => '/'
           # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  get '/home' => 'homes#home'
+  get '/home' => 'home#home'
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
