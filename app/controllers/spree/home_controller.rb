@@ -8,5 +8,10 @@ module Spree
       @products = @searcher.retrieve_products
       @taxonomies = Spree::Taxonomy.includes(root: :children)
     end
+
+    def home
+
+    end
+
   end
 end
