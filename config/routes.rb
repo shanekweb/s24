@@ -9,7 +9,7 @@ Spree::Core::Engine.add_routes do
 
   mount Spree::Core::Engine, :at => '/'
 
-  root :to => 'home#index'
+  root :to => 'home#home'
 
   get '/home', :to => 'spree/home#home', :as => :home
 
