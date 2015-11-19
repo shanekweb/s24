@@ -5,10 +5,7 @@
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
-  mount Spree::Core::Engine, :at => '/'
-          # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-  get '/home', :to => 'spree/home#home', :as => :home
+  
   # You can have the root of your site routed with "root"
 Spree::Core::Engine.add_routes do
 
@@ -17,6 +14,11 @@ Spree::Core::Engine.add_routes do
   resources :products, :only => [:index, :show]
 
   get '/locale/set', :to => 'locale#set'
+
+  mount Spree::Core::Engine, :at => '/'
+          # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+  get '/home', :to => 'spree/home#home', :as => :home
 
   # non-restful checkout stuff
   patch '/checkout/update/:state', :to => 'checkout#update', :as => :update_checkout
