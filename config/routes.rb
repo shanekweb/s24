@@ -1,11 +1,13 @@
-Rails.application.routes.draw do
+
+
+
+
+Spree::Core::Engine.add_routes do
+
+  Rails.application.routes.draw do
 
 
   mount Spree::Core::Engine, :at => '/'
-
-end
-
-Spree::Core::Engine.add_routes do
 
   root :to => 'home#index'
 
@@ -42,4 +44,5 @@ Spree::Core::Engine.add_routes do
   get '/content/cvv', :to => 'content#cvv', :as => :cvv
   get '/content/*path', :to => 'content#show', :as => :content
   get '/cart_link', :to => 'store#cart_link', :as => :cart_link
+end
 end
