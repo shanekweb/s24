@@ -1,11 +1,11 @@
 Spree::Core::Engine.add_routes do
 
   Rails.application.routes.draw do
-root :to => 'spree/home'
+
 
   mount Spree::Core::Engine, :at => '/'
 
-  
+  root :to => 'home#home'
 
   get '/home', :to => 'spree/home#home', :as => :home
 
