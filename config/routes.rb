@@ -3,11 +3,13 @@ Spree::Core::Engine.add_routes do
   Rails.application.routes.draw do
 
 
-  mount Spree::Core::Engine, :at => '/'
+  get '/home' => 'static_pages#home', :as => :home
 
-  root :to => 'home#home'
+  mount Spree::Core::Engine, :at => :home
 
-  get '/home', :to => 'spree/home#home', :as => :home
+  root :to => 'static_pages#home'
+
+  #get '/home', :to => 'spree/home#home', :as => :home
 
   resources :products, :only => [:index, :show]
 
