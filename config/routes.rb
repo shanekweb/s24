@@ -5,7 +5,7 @@ Spree::Core::Engine.add_routes do
 
   get '/home' => 'static_pages#home', :as => :home
 
-  mount Spree::Core::Engine, :at => '/'
+  mount Spree::Core::Engine, :at => :home
 
   root :to => 'static_pages#home'
 
