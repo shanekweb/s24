@@ -9,7 +9,9 @@ module Spree
       @taxonomies = Spree::Taxonomy.includes(root: :children)
     end
 
-
+    def selfHome
+    	
+    end
 
   end
 end
