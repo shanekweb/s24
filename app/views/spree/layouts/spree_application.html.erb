@@ -9,6 +9,8 @@
     <style>
       #spree-header{background: #3e3e3e !important;}
       select#taxon.form-control{display: none;}
+      hr.style{border: 0;height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc);clear: both;}
+      .blank15{height: 15px;clear: both;}
     </style>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
@@ -27,6 +29,13 @@
         </div>
 
         <%= yield :templates %>
+
+        <div class="blank15"></div>
+        <hr class="style">
+        <div id="footer">
+        footer
+
+        </div>
       </div>
     </div>
   </body>

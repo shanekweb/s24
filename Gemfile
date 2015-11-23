@@ -47,6 +47,8 @@ end
 gem 'spree', '3.0.1'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '3-0-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '3-0-stable'
+gem 'spree_frontend', '~> 3.0', '>= 3.0.1'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: '3-0-stable'
 
 gem 'rails_12factor', group: :production
 ruby "2.2.3"

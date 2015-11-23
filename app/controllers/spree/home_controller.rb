@@ -13,5 +13,9 @@ module Spree
     	
     end
 
+    def about
+      
+    end
+
   end
 end

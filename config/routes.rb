@@ -4,6 +4,7 @@ Spree::Core::Engine.add_routes do
 
 
   get '/home' => 'home#selfHome', :as => :home
+  get '/about' => 'home#about', :as => :about
 
   mount Spree::Core::Engine, :at => '/'
 
