@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151123233143) do
+ActiveRecord::Schema.define(version: 20151123235308) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -417,7 +417,7 @@ ActiveRecord::Schema.define(version: 20151123233143) do
   add_index "spree_product_properties", ["property_id"], name: "index_spree_product_properties_on_property_id", using: :btree
 
   create_table "spree_products", force: :cascade do |t|
-    t.string   "name",                 default: "",   null: false
+    t.string   "name",                 default: "",         null: false
     t.text     "description"
     t.datetime "available_on"
     t.datetime "deleted_at"
@@ -426,13 +426,14 @@ ActiveRecord::Schema.define(version: 20151123233143) do
     t.string   "meta_keywords"
     t.integer  "tax_category_id"
     t.integer  "shipping_category_id"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
     t.boolean  "promotionable",        default: true
     t.string   "meta_title"
     t.string   "colors"
     t.string   "brand"
     t.string   "category"
+    t.string   "imagePath",            default: "no image"
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
