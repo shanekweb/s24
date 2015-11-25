@@ -17,6 +17,19 @@ module Spree
     def show
       @imageProds =  @product.imagePath
       @imageProds2 = @product.imagePath2
+      @imageProds3 =  @product.imagePath3
+      @imageProds4 =  @product.imagePath4
+      @imageProds5 =  @product.imagePath5
+      @imageProds6 =  @product.imagePath6
+      @imageProds7 =  @product.imagePath7
+      @imageProds8 =  @product.imagePath8
+      @imageProds9 =  @product.imagePath9
+      @imageProds10 =  @product.imagePath10
+      @imageProds11 =  @product.imagePath11
+      @imageProds12 =  @product.imagePath12
+      @imageProds13 =  @product.imagePath13
+      @imageProds14 =  @product.imagePath14
+      @imageProds15 =  @product.imagePath15
       @variants = @product.variants_including_master.active(current_currency).includes([:option_values, :images])
       @product_properties = @product.product_properties.includes(:property)
       @taxon = Spree::Taxon.find(params[:taxon_id]) if params[:taxon_id]
