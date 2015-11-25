@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151125134605) do
+ActiveRecord::Schema.define(version: 20151125143100) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -439,6 +439,16 @@ ActiveRecord::Schema.define(version: 20151125134605) do
     t.string   "imagePath4",           default: "none"
     t.string   "imagePath5",           default: "none"
     t.boolean  "visible",              default: true
+    t.string   "imagePath6",           default: ""
+    t.string   "imagePath7",           default: ""
+    t.string   "imagePath8",           default: ""
+    t.string   "imagePath9",           default: ""
+    t.string   "imagePath10",          default: ""
+    t.string   "imagePath11",          default: ""
+    t.string   "imagePath12",          default: ""
+    t.string   "imagePath13",          default: ""
+    t.string   "imagePath14",          default: ""
+    t.string   "imagePath15",          default: ""
   end
 
   add_index "spree_products", ["available_on"], name: "index_spree_products_on_available_on", using: :btree
