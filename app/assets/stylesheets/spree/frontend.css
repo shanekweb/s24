@@ -4,6 +4,6 @@
  *= require_self
  *= require_tree .
 */
-.taxon_products img {
+#products img {
 	max-height: 150px !important;
 }
