@@ -4,6 +4,3 @@
  *= require_self
  *= require_tree .
 */
-.panel-body img {
-	max-height: 150px !important;
-}
